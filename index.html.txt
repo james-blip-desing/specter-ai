@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Specter AI - Developer Agent</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Inter,sans-serif;
+}
+
+body{
+background:#0f1117;
+color:white;
+display:flex;
+height:100vh;
+overflow:hidden;
+}
+
+.sidebar{
+width:240px;
+background:#161a22;
+padding:25px;
+display:flex;
+flex-direction:column;
+gap:20px;
+border-right:1px solid #2a2f3a;
+}
+
+.logo{
+font-size:22px;
+font-weight:600;
+margin-bottom:20px;
+color:#7c9cff;
+}
+
+.menu-item{
+padding:12px;
+border-radius:8px;
+cursor:pointer;
+transition:0.2s;
+}
+
+.menu-item:hover{
+background:#232833;
+}
+
+.main{
+flex:1;
+display:flex;
+flex-direction:column;
+}
+
+.header{
+height:70px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 30px;
+border-bottom:1px solid #2a2f3a;
+background:#161a22;
+}
+
+.header h2{
+font-weight:500;
+}
+
+.content{
+flex:1;
+padding:20px;
+overflow:auto;
+}
+
+.agent-container{
+background:#11151c;
+border-radius:10px;
+border:1px solid #2a2f3a;
+overflow:hidden;
+}
+
+iframe{
+width:100%;
+height:700px;
+border:none;
+}
+
+.tools{
+margin-top:20px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.card{
+background:#161a22;
+padding:20px;
+border-radius:10px;
+border:1px solid #2a2f3a;
+transition:0.2s;
+cursor:pointer;
+}
+
+.card:hover{
+transform:translateY(-4px);
+background:#1d222c;
+}
+
+.card h3{
+margin-bottom:10px;
+color:#7c9cff;
+}
+
+.footer{
+padding:15px;
+text-align:center;
+font-size:13px;
+color:#8b92a0;
+border-top:1px solid #2a2f3a;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<div class="logo">Specter AI</div>
+
+<div class="menu-item">Dashboard</div>
+<div class="menu-item">Code Generator</div>
+<div class="menu-item">Code Analyzer</div>
+<div class="menu-item">UI Builder</div>
+<div class="menu-item">Deployment Guide</div>
+<div class="menu-item">Windows Commands</div>
+
+</div>
+
+
+<div class="main">
+
+<div class="header">
+<h2>AI Developer Agent</h2>
+<div>Online</div>
+</div>
+
+
+<div class="content">
+
+<div class="agent-container">
+
+<iframe src="https://www.sketricgen.ai/fullscreen-widget/skflow_d92e1a72-1841-40cf-8ae0-116d2e626ed3"></iframe>
+
+</div>
+
+
+<div class="tools">
+
+<div class="card">
+<h3>Full Stack Builder</h3>
+<p>Generate complete applications including frontend, backend, database and deployment.</p>
+</div>
+
+<div class="card">
+<h3>Code Analyzer</h3>
+<p>Paste code to detect errors, optimize performance and improve architecture.</p>
+</div>
+
+<div class="card">
+<h3>Premium UI Generator</h3>
+<p>Create modern dashboards, landing pages and SaaS UI systems.</p>
+</div>
+
+<div class="card">
+<h3>Deployment Mentor</h3>
+<p>Step-by-step guidance for deploying apps to hosting platforms.</p>
+</div>
+
+<div class="card">
+<h3>Windows Command Trainer</h3>
+<p>Learn terminal commands used in development environments.</p>
+</div>
+
+<div class="card">
+<h3>Prompt Engineer</h3>
+<p>Create powerful prompts for AI workflows and automation.</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="footer">
+Specter AI Developer Platform
+</div>
+
+</div>
+
+</body>
+</html>
